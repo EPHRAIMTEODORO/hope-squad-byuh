@@ -23,7 +23,7 @@
     padding: 20px 10%;
   }
   .banner {
-    width: 25%; /* Make the banner stretch across the header */
+    width: 500px; /* Make the banner stretch across the header */
     height: auto; /* Maintain aspect ratio */
     padding: 30px;
 }
@@ -94,7 +94,7 @@
 }
 
 #workshop_message p{
-  font-size: 1.5em; 
+  font-size: 1.2em; 
   line-height: 1.5; 
   text-align: center;
   
