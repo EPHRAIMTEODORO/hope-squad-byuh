@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+    font-family: "Montserrat", sans-serif;
+    
+  }
+  li, a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10%;
+  }
+  .banner {
+    width: 25%; /* Make the banner stretch across the header */
+    height: auto; /* Maintain aspect ratio */
+    padding: 30px;
+}
+
+  .nav_links{
+    list-style:none;
+  }
+  .nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  .hero_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero-img{
+    max-width: 100%;
+  }
+  #hero-msg{
+    width: 75%;
+    margin:0 auto;
+    padding:20px;
+  }
+  #hero-msg h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #hero-msg p {
+    font-size: 1.2em; 
+    line-height: 1.5; 
+    text-align: center;
+}
+.workshop_container{
+  max-width: 50vw;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  
+
+}
+.wrapper{
+  width: 200vw;
+  display: flex;
+  padding-bottom: 20px;
+  animation: slide 16s infinite;
+
+}
+.wrapper img{
+  max-width: 50vw;
+  height: auto;
+  flex: 0 0 50vw;
+  padding: 30px; 
+  /* the padding is just temporary, image sizes different so i need to find 
+  a way to fix problex where img 2,3,4 still show a little bit of frame 
+  from previous img */
+}
+@keyframes slide {
+  0%, 20% { transform: translateX(0); } /* First image */
+  25%, 45% { transform: translateX(-50vw); } /* Second image */
+  50%, 70% { transform: translateX(-100vw); } /* Third image */
+  75%, 95% { transform: translateX(-150vw); } /* Fourth image */
+  100% { transform: translateX(0); } /* Loop back */
+}
+
+#workshop_message p{
+  font-size: 1.5em; 
+  line-height: 1.5; 
+  text-align: center;
+  
+  
+
+}
+
+
+
